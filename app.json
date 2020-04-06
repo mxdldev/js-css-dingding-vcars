@@ -4,5 +4,31 @@
   ],
   "window": {
     "defaultTitle": "My App"
-  }
+  },
+   "tabBar": {
+    "textColor": "#404040",
+    "selectedColor": "#108ee9",
+    "backgroundColor": "#F5F5F9",
+    "items": [
+      {
+        "pagePath": "pages/usevehicle/indexV1/index",
+        "icon": "image/tabbar_icon_usecar_normal2x.png",
+        "activeIcon": "image/tabbar_icon_usecar_select2x.png",
+        "name": "申请"
+      },
+      {
+        "pagePath": "pages/application/vehicleaffair/applyVehicle/applyVehicle",
+        "icon": "image/tabbar_icon_tubecar_normal.png",
+        "activeIcon": "image/tabbar_icon_tubecar_select.png",
+        "name": "管车"
+      },
+      {
+        "pagePath": "pages/me/index/index",
+        "icon": "image/tabbar_icon_setting_normal.png",
+        "activeIcon": "image/tabbar_icon_setting_select.png",
+        "name": "我的"
+      }
+    ]
+  },
+  "debug": true
 }
