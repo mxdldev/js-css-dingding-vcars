@@ -1,0 +1,13 @@
+<view >
+  <view class="container" style="">
+    <view class="box"> 
+    公车
+    </view>
+    <view class="box">
+    私车
+    </view>
+  </view>
+  <view class="hintbg">
+        私车仅限个人使用，管理员没有权限访问。  
+  </view>
+</view>
