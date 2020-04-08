@@ -1,18 +1,3 @@
 <view>
-  <view class="car-group-item">
-    <view class="car-group-item-left">
-      <image mode="scaleToFill" src="/images/group_icon_avatar.png"/>
-    </view>
-    <view class="car-group-item-middle">
-      <view class="aa">
-        <text>市场大客户维护组</text>
-      </view>
-      <view  class="bb">
-        <text>组车管员：李沫莫</text>
-      </view>
-    </view>
-    <view class="car-group-item-right">
-    <text>加入</text>  
-    </view>    
-  </view>
+      <text>加入</text>  
 </view>

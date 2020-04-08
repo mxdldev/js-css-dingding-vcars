@@ -1,0 +1,42 @@
+.car-group-body{
+    display: flex;
+}
+.car-group-item{
+    width: 100%;
+    display: flex;
+    padding: 20rpx 32rpx 26rpx;
+    background-color: #FFF;
+    justify-content: space-between;
+}
+.car-group-item>.left>image{
+    display: flex;
+    width: 80rpx;
+    height: 80rpx
+}
+.car-group-item>.middle{
+     display: flex;
+     flex-direction: column;
+     flex-grow: 1;
+     margin: 0 24rpx;
+     justify-content: space-between;
+}
+
+.middle text:nth-of-type(1){
+    font-size:34rpx;
+    font-weight:bold;
+    color:rgba(34,34,34,1);
+}
+.middle text:nth-of-type(2){
+    font-size:24rpx;
+    color:rgba(85,85,85,1);
+}
+.car-group-item>.right{
+     display: flex;
+     align-items: center;
+}
+.car-group-item>.right>text{
+    font-size:12px;
+    color:rgba(76,175,80,1);
+    border: 1rpx solid rgba(76,175,80,1);
+    padding: 6rpx 12rpx;
+}

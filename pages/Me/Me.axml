@@ -1,3 +1,14 @@
-<view>
-  New Page
+<view class="car-group-body">
+  <view class="car-group-item">
+      <view class="left">
+          <image mode="scaleToFill" src="/images/group_icon_avatar.png"/>
+      </view>
+      <view class="middle">
+        <text>市场大客户维护组</text>
+        <text>组车管员：李沫莫</text>
+      </view>
+      <view class="right">
+        <text>加入</text>
+      </view>
+  </view>  
 </view>

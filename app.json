@@ -1,8 +1,9 @@
 {
   "pages": [
+    "pages/Me/Me",
     "pages/index/index",  
-    "pages/AdminCar/AdminCar",
-    "pages/Me/Me"
+    "pages/AdminCar/AdminCar"
+   
   ],
   "window": {
     "defaultTitle": "易车队"
