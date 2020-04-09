@@ -1,4 +1,6 @@
 Page({
   data: {},
-  onLoad() {},
+  onLoad() {
+    console.info("onLoad start:" + getApp().session.Name);
+  },
 });
