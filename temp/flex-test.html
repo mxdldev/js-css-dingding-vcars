@@ -1,0 +1,184 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>flex-test</title>
+	<style>
+  /*定义了一个属性选择器样式
+    只要class选择器的名字的结尾匹配face都适用于该样式
+	由于骰子比较多而且样式都一样的，所以就把公共的样式部分抽取出来
+	这样会大大的减少我们的代码量
+  */
+  [class$="face"] {
+  margin: 16px;/*该元素的上下左右都间距16px*/
+  padding: 4px;/*该元素内部的内容和元素的边框上下左右的间距都是4px*/
+  
+  background-color: #e7e7e7;/*定义每个骰子的背景颜色*/
+  width: 104px;/*定义骰子的宽*/
+  height: 104px;/*定义骰子的高*/
+  object-fit: contain;/**/
+  
+	  /*定义骰子的边框阴影效果*/
+  box-shadow:
+    inset 0 5px white, 
+    inset 0 -5px #bbb,
+    inset 5px 0 #d7d7d7, 
+    inset -5px 0 #d7d7d7;
+  	/*定义圆角*/
+  border-radius: 10%;
+}
+/*定义的每一个子元素*/
+.pip {
+	/*定义span是要给块元素*/
+  display: block;
+ /*定义点子的宽和高*/			
+  width: 24px;
+  height: 24px;
+	/*圆角为50%就成了一个圆形了*/
+  border-radius: 50%;
+  /*上下左右的边距都是4px*/	
+  margin: 4px;
+  /*定义它的颜色*/	
+  background-color: #F00;
+	/*定义它的边框阴影*/
+  box-shadow: inset 0 3px #111, inset 0 -3px #555;
+}
+		
+/*所有的标签都是包含border的box*/		
+* {
+  box-sizing: border-box;
+}
+/*组合选择器的高度为100% */
+html, body {
+  height: 100%;
+}
+/*定义了真个页面的布局为弹性布局*/
+body {
+  display: flex;
+  /*主轴的对齐方式为居中*/
+  align-items: center;
+/*交叉轴的对其方式为居中*/
+  justify-content: center;
+	
+  vertical-align: center;
+  /*子元素都自动换行*/
+  flex-wrap: wrap;
+	/*子元素的内容整体居中*/
+  align-content: center;
+  font-family: 'Open Sans', sans-serif;
+  
+  background: linear-gradient(top, #222, #333);
+}
+		/*一个色子*/
+		.first-face{
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+		/*两个色子*/
+		.second-face{
+			display: flex;
+			justify-content: space-between;
+		}
+		.second-face .pip:nth-of-type(2){					align-self: flex-end;
+		}
+		.three-face{
+			display: flex;	
+			justify-content: space-between;
+		}
+		.three-face .pip:nth-of-type(2){
+			align-self: center;
+		}
+		
+		.three-face .pip:nth-of-type(3){
+			align-self: flex-end;
+		}
+		.four-face{
+			display: flex;
+			justify-content: space-between;
+		}
+		.four-face .clumn{
+			display: flex;
+			flex-direction:	column;
+			justify-content: space-between;
+		}
+		.five-face{
+			display: flex;
+			justify-content: space-between;
+		}
+		.five-face .clumn{
+			display: flex;
+			flex-direction:	column;
+			justify-content: space-between;
+		}
+		.five-face .middle{
+			display:flex;
+			align-items: center;
+		}
+		.six-face{
+			display: flex;
+			justify-content: space-between;			
+		}
+		.six-face .clumn{
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+				
+		}
+}
+	</style>
+</head>
+
+<body>
+	<!--一个色子-->
+	<div class="first-face">
+		<span class="pip"></span>
+	</div>
+	<div class="second-face">
+		<span class="pip"></span>
+		<span class="pip"></span>
+	</div>
+	<div class="three-face">
+		<span class="pip"></span>
+		<span class="pip"></span>
+		<span class="pip"></span>
+	</div>
+	<div class="four-face">
+		<div class="clumn">
+			<span class="pip"></span>
+			<span class="pip"></span>
+		</div>
+		<div class="clumn">
+			<span class="pip">1</span>
+			<span class="pip">1</span>
+		</div>		
+	</div>
+	<div class="five-face">
+		<div class="clumn">
+			<span class="pip"></span>
+			<span class="pip"></span>
+		</div>
+		<div class="middle">
+			<span class="pip"></span>
+		</div>
+	
+		<div class="clumn">
+			<span class="pip">1</span>
+			<span class="pip">1</span>
+		</div>		
+	</div>
+	<div class="six-face">
+		<div class="clumn">
+			<span class="pip"></span>
+			<span class="pip"></span>
+			<span class="pip"></span>
+		</div>
+		<div class="clumn">
+			<span class="pip"></span>
+			<span class="pip"></span>
+			<span class="pip"></span>
+		</div>
+	</div>
+	
+</body>
+</html>
