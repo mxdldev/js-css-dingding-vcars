@@ -54,7 +54,7 @@
     font-size:20rpx;
     color:rgba(30,136,229,1);
     border: 1rpx solid rgba(30,136,229,1);
-    padding: 3rpx 2rpx;
+    padding: 1rpx 2rpx;
     margin-left: 24rpx;
     align-items: center;
 }
