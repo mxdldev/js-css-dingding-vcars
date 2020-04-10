@@ -1,3 +1,27 @@
 <view>
-      <text>加入</text>  
+      <block a:for="{{vehicles}}">
+            <list-item arrow="up" onClick="onItemClick" data-vehicle="{{item}}">
+                  <view class="car-list-item">
+                        <view class="car-list-item-left">
+                              <image mode="scaleToFill" src="/images/car.png"/>
+                        </view>
+                        <view class="car-list-item-middle">
+                              <view class="car-top">
+                                    <text class="car-number">{{item.PlateNumber}}</text>
+                                    <text class="company-name">{{item.DeptName}}</text>
+                              </view>
+                              <view class="car-middle">
+                                    <text>{{item.BrandName}} {{item.SeriesName}} {{item.VersionName}}</text>
+                              </view>
+                              <view class="car-bottom">
+                                    <image mode="scaleToFill" src="/images/carlist_icon_nosupport2x.png"/>
+                                    <text>设备</text>
+                              </view>
+                        </view>
+                        <view class="car-list-item-right">
+                              <image mode="scaleToFill" src="/images/arrowright.png"/>
+                        </view>
+                  </view>
+            </list-item>
+      </block>
 </view>

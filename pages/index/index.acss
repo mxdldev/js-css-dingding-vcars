@@ -1,0 +1,70 @@
+.car-list-item{
+    display: flex;
+    padding: 16rpx 32rpx;
+    background-color: #FFF
+}
+.car-list-item-left{
+    display: flex;
+    width: 40rpx;
+    height: 40rpx;
+    margin-top: 10rpx;
+}
+.car-list-item-left image{
+    width: 40rpx;
+    height: 40rpx;
+}
+.car-list-item-middle{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    margin: 0 24rpx;
+}
+.car-list-item-middle>.car-top{
+    display: flex;
+}
+.car-list-item-middle>.car-bottom{
+    display: flex;
+   
+}
+.car-bottom>image{
+    width: 24rpx;
+    height: 24rpx;
+}
+.car-bottom>text{
+    font-size:24rpx;
+    color:rgba(85,85,85,1);
+}
+.car-list-item-middle>.car-middle{
+    display: flex;
+    margin: 8rpx 0rpx 16rpx;
+}
+.car-list-item-middle>.car-middle text{
+    font-size:24rpx;
+    color:rgba(136,136,136,1);   
+    
+}
+.car-top>.car-number{
+     display: flex;
+    font-size:34rpx;
+    font-weight:bold;
+    color:rgba(34,34,34,1);
+}
+.car-top>.company-name{
+    display: flex;
+    font-size:20rpx;
+    color:rgba(30,136,229,1);
+    border: 1rpx solid rgba(30,136,229,1);
+    padding: 3rpx 2rpx;
+    margin-left: 24rpx;
+    align-items: center;
+}
+.car-list-item-right{
+    display: flex;
+    width: 30rpx;
+    height: 30rpx;
+    margin-top: 10rpx;
+}
+.car-list-item-right image{
+    width: 30rpx;
+    height: 30rpx;
+}

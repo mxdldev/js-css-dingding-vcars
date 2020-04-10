@@ -1,4 +1,7 @@
 Page({
+  data: {
+    vehicles: [],
+  },
   onLoad(query) {
     // 页面加载
     //console.info(`Page onLoad with query: ${JSON.stringify(query)}`);
@@ -90,7 +93,7 @@ Page({
     console.info('getListVehicle start...');
     //获取车辆列表开始
     var url = 'http://123.56.26.99:9050/ApplyVehicle/GetVehicleUseableList?authCode=' + getApp().session.authCode
-
+    var that = this;
     dd.httpRequest({
       headers: {
         "Content-Type": "application/json",
@@ -103,7 +106,11 @@ Page({
       dataType: 'text',
       success: function (res) {
         console.info('getListVehicle success...');
-        console.info(JSON.stringify(res));
+        console.info(JSON.stringify(res.data));
+       
+        that.setData({
+          vehicles: JSON.parse(res.data),
+        })
 
       },
       fail: function (res) {
