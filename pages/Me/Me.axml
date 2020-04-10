@@ -1,6 +1,6 @@
 <view class="car-group-body">
   <block a:for="{{cargroup}}">
-    <list-item arrow="up" onClick="onItemClick" data-vehicle="{{item}}">
+    <list-item arrow="up" onClick="onItemClick" data-car-group="{{item}}">
       <view class="car-group-item">
         <view class="left">
           <image mode="scaleToFill" src="/images/group_icon_avatar.png"/>
@@ -9,7 +9,7 @@
           <text>{{item.GroupName}}</text>
           <text>组车管员：{{item.UserName}}</text>
         </view>
-        <view class="right">
+        <view class="right" onTap="onAddCarGroup">
           <text>加入</text>
         </view>
       </view>

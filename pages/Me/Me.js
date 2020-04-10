@@ -40,5 +40,8 @@ Page({
         console.info('getCarGroup complete...');
       }
     });
+  },
+  onAddCarGroup(){
+    console.info("onAddCarGroup start...");
   }
 });
