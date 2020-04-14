@@ -1,6 +1,6 @@
 <view>
       <block a:for="{{vehicles}}">
-            <list-item arrow="up" onClick="onItemClick" data-vehicle="{{item}}">
+            <list-item onClick="onItemClick" data-vehicle="{{item}}">
                   <view class="car-list-item">
                         <view class="car-list-item-left">
                               <image mode="scaleToFill" src="/images/car.png"/>

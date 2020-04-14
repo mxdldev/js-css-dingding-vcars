@@ -4,6 +4,12 @@ Page({
   },
   onLoad() {
     console.info("onLoad start:" + getApp().session.Name);
+
+    //var pages = getCurrentPages();
+    //var prevPage = pages[pages.length - 2];
+    //var vehicleId = prevPage.data.vehicle.Id;
+    //var groupId = prevPage.data.vehicle.Id;
+
     this.getCarGroup();
   },
   getCarGroup() {

@@ -58,7 +58,7 @@ Page({
   getUserInfo() {
     //获取用户ID
     console.info('getUserInfo start...');
-    var url = 'http://123.56.26.99:9050/UserInfo/GetUserInfoByAuthCode?authCode=' + getApp().session.authCode
+    var url = 'http://10.1.11.125:9009/UserInfo/GetUserInfoByAuthCode?authCode=' + getApp().session.authCode
     var that = this;
     dd.httpRequest({
       headers: {
@@ -92,7 +92,7 @@ Page({
   getListVehicle() {
     console.info('getListVehicle start...');
     //获取车辆列表开始
-    var url = 'http://123.56.26.99:9050/ApplyVehicle/GetVehicleUseableList?authCode=' + getApp().session.authCode
+    var url = 'http://10.1.11.125:9009/ApplyVehicle/GetVehicleUseableList?authCode=' + getApp().session.authCode
     var that = this;
     dd.httpRequest({
       headers: {
