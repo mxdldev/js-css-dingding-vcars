@@ -1,0 +1,96 @@
+.page-main {
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: #F4F4F4;
+    font-size: 0.3rem;
+    overflow-y: scroll;
+}
+
+.page-item {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding: 0.16rem 0.4rem 0.16rem 0.4rem;
+    background: #ffffff;
+}
+
+.page-item > .left {
+    display: flex;
+    color: #888888;
+    flex: 0 0 2.1rem;
+    white-space: nowrap;
+}
+
+.page-item > .pic-title {
+    flex:0 0 2rem;
+}
+
+.page-item > .right > .pic-content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.page-item > .right {
+    color: #222222;
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1 1 auto;
+}
+
+.page-item > .blue {
+    color: #397CC2;
+}
+
+.page-item .pop {
+    flex:0 0 0.32rem;
+    height: 0.32rem;
+    margin-left: 0.2rem;
+}
+
+.page-item .pri-vehicle-tip {
+    background: #FEF2E8;
+    color: #FF943E;
+    font-size: 0.2rem;
+    padding: 0.02rem 0.08rem;
+    margin-left: 0.16rem;
+    border-radius: 0.04rem;
+    display: flex;
+    align-items: center;
+}
+
+.page-item .square-pic {
+    width: 0.8rem;
+    height: 0.8rem;
+    margin: 0 0.2rem 0.2rem 0;
+}
+
+.blue-hand {
+    color: #3296fa;
+    cursor: pointer;
+}
+
+.blue-box {
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background: #ffffff;
+    z-index: 20;
+}
+
+.blue-btn {
+    background: #3296FA;
+    color: white;
+    font-size: 0.30rem;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    border-radius: .40rem;
+    margin: 0.2rem;
+    padding: 0.2rem 0;
+}
